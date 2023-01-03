@@ -26,19 +26,3 @@ class log_setup:
         #add handlers
         logging.getLogger('').addHandler(stream_handler)
 
-
-
-logs= Log_setup('URL_log.txt')
-logger1 = logging.getLogger('URL_Reader')
-
-Link=input('Please provide a URL to look at')
-try:
-    with urllib.request.urlopen(Link) as Tagesschau:
-        print(Tagesschau.read(600)
-
-except:
-    logger1.error('The input is either not a URL or flawed.')
-    print('Please provide a valid input')
-
-
-logging.shutdown()

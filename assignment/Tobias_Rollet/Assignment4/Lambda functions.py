@@ -7,5 +7,5 @@ number=range(x,y)
 
 lam=list(filter(lambda x: x % 2 ==0, number))
 
-print(list(number))
-print(lam)
+print('Full range:' , list(number))
+print('Divisable by 2:', lam)
